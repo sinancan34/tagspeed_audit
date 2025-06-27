@@ -1,0 +1,6 @@
+[phases.build]
+cmd = "npm ci && npm run build -- --configuration production"
+
+[providers.static]
+dir = "dist/ui"
+spa = true
