@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "start": "npm run build && node server.js",
+    "build": "ng build --configuration production",
+    "watch": "ng build --watch --configuration production",
     "test": "ng test --watch=false",
     "lint": "gts lint src"
   },
